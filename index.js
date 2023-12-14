@@ -13,16 +13,16 @@
 // let c = 55;
 
 // let sum = 1;
-// if (a % 2 === 0 && a % 5 === 0) {
+// if (a % 2 == 0 && a % 5 == 0) {
 //   sum *= a;
 // }
-// if (b % 2 === 0 && b % 5 === 0) {
+// if (b % 2 == 0 && b % 5 == 0) {
 //   sum *= b;
 // }
-// if (c % 2 === 0 && c % 5 === 0) {
+// if (c % 2 == 0 && c % 5 == 0) {
 //   sum *= c;
 // }
-// console.log(sum); // Natija: 10
+// console.log(sum); // Natija: 50
 
 // 2. 4 ta son berilgan. Berilgan sonlar orasidan 3 ga yoki 7 ga karralilarining kopaytmasini topuvchi algoritmlar:
 
@@ -47,7 +47,14 @@
 
 // console.log(sum); // Natija: 126
 
-// 4. 2 xonali son berilgan. Berilgan sonning o'nlar xonasidagi son juft bo'lsa uning kvadratini // aks holda kubini topuvchi algoritm yozing
+// 3-masala
+// let number = 45;
+// let onlik = Math.floor(number / 10);
+// let birlik = num1 %10;
+// let result = onlik * birlik;
+// console.log(result);
+
+// 4. 2 xonali son berilgan. Berilgan sonning o'nlar xonasidagi son juft bo'lsa uning kvadratini aks holda kubini topuvchi algoritm yozing
 // let number = 67;
 // let tens = Math.floor(number / 10);
 // if (tens % 2 === 0) {
@@ -58,12 +65,17 @@
 
 // 5.  3 xonali son berilgan. Uning o'nlar hamda yuzlar xonasidagi sonlarni topuvchi algoritm yozing.
 
+// let num1 = 231;
+// let onlik= Math.floor(num1 / 10)%10;
+// let yuzlar = Math.floor(num1 / 100);
+// console.log(onlik,yuzlar);
+
 // 6.  3 xonali son berilgan. Uning toq raqamlari raqamlari ko paytmasini topuvchi algoritm yozing
 // let number = 345;
 // let ones = number % 10;
 // let hundreds = Math.floor(number / 100);
 
-// console.log(ones * hundreds); // Natija: 12
+// console.log(ones * hundreds);
 
 // 7.  4 xonali son berilgan. Uning juft raqamlari sonini topuvchi algoritm yozing
 
@@ -83,15 +95,23 @@
 
 // 9.  5 xonali son berilgan. Berilgan sondagi nollar sonini topuvchi algoritm yozing
 // let number = 50000;
+// let birlar = number % 10;
+// let onlik = Math.floor(number / 10) % 10;
+// let yuzlar = Math.floor(number / 100) % 10;
+// let minglar = Math.floor(number / 100) % 10;
+// let onmimglar = Math.floor(number / 100);
 // let zero = 0;
 
+// if (birlar == 0) {
+//   zero++;
+// }
 // while (number > 0) {
 //   if (number % 10 === 0) {
 //     zero++;
 //   }
 //   number = Math.floor(number / 10);
 // }
-// console.log(zero); // Natija: 4.
+// console.log(zero);
 //
 // 10. Olimning poyezdi soat t da ketishi kerak edi. Lekin u T soat kechikdi. Olimning poyezdi soat nechada ketishini  topuvchi algoritm yozing. Bu yerda (0 < t < 23)
 // let t = 22;
@@ -106,4 +126,4 @@
 //   hoursToWait = 24 + hoursToWait;
 // }
 
-// console.log(hoursToWait); // Natija: 2
+// console.log(hoursToWait);
